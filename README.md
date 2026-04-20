@@ -27,7 +27,27 @@ This project is production-ready for legal information assistance.
 | **Distribution** | Hugging Face Space | ✅ Distributed | 27 / 30 |
 
 ## 🎯 About The Project
-LawGPT is a RAG based generative AI attorney chatbot that is trained using Indian Penal Code data. This project was developed using Streamlit LangChain and TogetherAI API for the LLM. Ask any questions to the attorney and it will give you the right justice as per the IPC. Are you a noob in knowing your rights? then this is for you!
+LawGPT is a RAG based generative AI attorney chatbot that is trained using Indian Penal Code data.
+
+## 🏗 Architecture
+LawGPT utilizes a modern RAG (Retrieval-Augmented Generation) pipeline to ground LLM responses in factual legal data.
+
+```mermaid
+graph TD
+    A[Legal Documents .pdf] --> B[Ingest Script]
+    B --> C[Vector DB Faiss/Chroma]
+    D[User Query] --> E[Query Engine]
+    C --> E
+    E --> F[TogetherAI LLM]
+    F --> G[Reasoned Response]
+```
+
+### Core Components
+- **Knowledge Base (`data/`)**: Contains the Indian Penal Code (IPC) source documents in PDF format.
+- **Ingest Engine (`Ingest.py`)**: Handles document parsing, chunking, and embedding generation for the vector store.
+- **RAG App (`app.py`)**: The Streamlit entry point that orchestrates the similarity search and LLM completion.
+- **Vector DB**: Local persistence of embeddings for fast retrieval during inference.
+ This project was developed using Streamlit LangChain and TogetherAI API for the LLM. Ask any questions to the attorney and it will give you the right justice as per the IPC. Are you a noob in knowing your rights? then this is for you!
 <br>
 
 <div align="center">
