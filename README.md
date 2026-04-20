@@ -10,21 +10,7 @@
 
 **LawGPT** is a RAG (Retrieval-Augmented Generation) based generative AI attorney chatbot trained on the Indian Penal Code (IPC). It empowers citizens by providing instant, reasoned legal information using modern LLM architecture.
 
-## 🎬 Showcase Gallery
-| 🏛️ Attorney Interface | 📖 IPC Knowledge Base |
-| :---: | :---: |
-| ![Interface](https://github.com/harshitv804/LawGPT/assets/100853494/ecff5d3c-f105-4ba2-a93a-500282f0bf00) | ![Knowledge](https://github.com/ayushxx7/LawGPT/main/showcase/rag_flow.png) |
-
-## 📊 Repo Health: 92 / 100 (High Readiness)
-This project is production-ready for legal information assistance.
-
-| Category | Item | Status | Score |
-| :--- | :--- | :--- | :--- |
-| **Documentation** | README, LICENSE, .env.example | ✅ Complete | 15 / 15 |
-| **Security** | Secret Scan & .gitignore | ✅ Secure | 15 / 15 |
-| **Automation** | Ingest & Vector DB Scripts | ✅ Working | 15 / 20 |
-| **Showcase** | Live Demo & Visuals | ✅ Verified | 20 / 20 |
-| **Distribution** | Hugging Face Space | ✅ Distributed | 27 / 30 |
+`✅ Verified RAG Engine | ✅ IPC Knowledge Base | ✅ MIT Licensed | ✅ Live Demo Available`
 
 ## 🎯 About The Project
 LawGPT is a RAG based generative AI attorney chatbot that is trained using Indian Penal Code data.
